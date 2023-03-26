@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+  </head>
+  <body>
+    
+        <div id="blog-container">
+      <article>
+        <h2>My First Blog Post</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien a lacinia hendrerit, sapien ligula bibendum risus, in interdum augue sapien ut purus. Sed efficitur urna non turpis bibendum bibendum.</p>
+        <p><em>Posted by John Doe on March 1, 2023</em></p>
+      </article>
+      <article>
+        <h2>My Second Blog Post</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien a lacinia hendrerit, sapien ligula bibendum risus, in interdum augue sapien ut purus. Sed efficitur urna non turpis bibendum bibendum.</p>
+        <p><em>Posted by Jane Smith on March 15, 2023</em></p>
+      </article>
+    </div>
+    <script src="data.js"></script>
+    <script id="blog-template" type="text/x-handlebars-template">
+      <article>
+        <h2>{{title}}</h2>
+        <p>{{content}}</p>
+        <p><em>Posted by {{author}} on {{date}}</em></p>
+      </article>
+    </script>
+    <script>
+      const blogTemplate = Handlebars.compile(document.getElementById("blog-template").innerHTML);
+      const blogContainer = document.getElementById("blog-container");
+      blogPosts.forEach((post) => {
+        blogContainer.innerHTML += blogTemplate(post);
+      });
+    </script>
+  </body>
+</html>
