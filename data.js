@@ -3,7 +3,9 @@ const blogPosts = [
       title: "My First Blog Post",
       date: "March 1, 2023",
       author: "John Doe",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien a lacinia hendrerit, sapien ligula bibendum risus, in interdum augue sapien ut purus. Sed efficitur urna non turpis bibendum bibendum."
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien a lacinia hendrerit, sapien ligula bibendum risus, in interdum augue sapien ut purus. Sed efficitur urna non turpis bibendum bibendum.",
+      imageUrl: "resource/SampleJPGImage_50kbmb.jpg",
+      imageAltText: 'A beautiful image'
     },
     {
       title: "My First Blog Post",

@@ -7,6 +7,7 @@
   </head>
   <body>
     <div class="align-right">
+    <button id="theme-resume" onclick="window.location.href = 'https://blazingvx.github.io/resume/';">Resume</button>
     <button id="theme-toggle">Toggle Theme</button>
     </div>
     <div id="blog-container">
@@ -19,6 +20,9 @@
     <script id="blog-post-template" type="text/x-handlebars-template">
       <article>
         <h2>{{title}}</h2>
+        {{#if imageUrl}}
+          <img src="{{imageUrl}}" alt="{{imageAltText}}">
+        {{/if}}
         <p>{{content}}</p>
         <p><em>Posted by {{author}} on {{date}}</em></p>
       </article>

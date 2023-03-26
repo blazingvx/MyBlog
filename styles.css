@@ -115,4 +115,17 @@
     padding: 5px 10px;
     margin-bottom: 20px;
   }
+
+  /* Theme Resume button styles */
+  
+  #theme-resume {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
   
