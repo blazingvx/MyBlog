@@ -5,7 +5,8 @@ const blogPosts = [
       author: "John Doe",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien a lacinia hendrerit, sapien ligula bibendum risus, in interdum augue sapien ut purus. Sed efficitur urna non turpis bibendum bibendum.",
       imageUrl: "resource/SampleJPGImage_50kbmb.jpg",
-      imageAltText: 'A beautiful image'
+      imageAltText: 'A beautiful image',
+      link: "http://google.com"
     },
     {
       title: "My First Blog Post",
